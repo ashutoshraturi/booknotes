@@ -93,7 +93,7 @@ Service discovery coordinates closely with the chat services to avoid overload.
 ### Third-party Integration
 It is important for a chat application to support push notifications in order to get notified when someone sends you a message.
 
-This component won't be discussed extensively as it's already covered in the [Design a notification system chapter](../chapter11).
+This component won't be discussed extensively as it's already covered in the [Design a notification system chapter](../chapter11-notification-system).
 
 ### Scalability
 On a small scale, we can fit everything in a single server.

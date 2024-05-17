@@ -109,5 +109,5 @@ Additional talking points:
  * Web server scaling - We can easily scale the web tier by introducing more service instances as it's stateless.
  * Database scaling - Replication and sharding are a common approach to scale the data layer.
  * Analytics - Integrating analytics tracking in our URL shortener service can reap some business insights for clients such as "how many users clicked the link".
- * Availability, consistency, reliability - At the core of every distributed systems. We'd leverage concepts already discussed in [Chapter 02](../chapter02).
+ * Availability, consistency, reliability - At the core of every distributed systems. We'd leverage concepts already discussed in [Chapter 02](../chapter02-scale-zero-to-million).
 
