@@ -388,6 +388,7 @@ A message can be sent more than once and no message should be left unprocessed.
 
 ### Exactly once
 Extremely costly to implement for the system, albeit it's the friendliest guarantee to users:
+How does this feature work? Under the covers, it works in a way similar to TCP: each batch of messages sent to Kafka will contain a sequence number that the broker will use to dedupe any duplicate send. Unlike TCP, though—which provides guarantees only within a transient in-memory connection—this sequence number is persisted to the replicated log, so even if the leader fails, any broker that takes over will also know if a resend is a duplicate. The overhead of this mechanism is quite low: it’s just a few extra numeric fields with each batch of messages
 ![exactly-once](images/exactly-once.png)
 
 ## Advanced features
